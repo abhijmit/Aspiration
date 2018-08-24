@@ -1,0 +1,17 @@
+package com.in28minutes.spring.basics.springin5steps.cdi;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SomeCdiBusiness {
+
+	SomeCdiDao someCdiDao;
+
+	public SomeCdiDao getSomeCDIDAO() {
+		return someCdiDao; 
+	}
+
+	public void setSomeCDIDAO(SomeCdiDao someCDIDAO) {
+		this.someCdiDao = someCDIDAO;
+	}
+}

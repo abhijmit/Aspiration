@@ -1,0 +1,14 @@
+package com.in28minutes.spring.basics.springin5steps.cdi;
+
+public class SomeCDIBusiness {
+
+	SomeCDIDAO someCdiDao;
+
+	public SomeCDIDAO getSomeCDIDAO() {
+		return someCdiDao;
+	}
+
+	public void setSomeCDIDAO(SomeCDIDAO someCDIDAO) {
+		this.someCdiDao = someCDIDAO;
+	}
+}

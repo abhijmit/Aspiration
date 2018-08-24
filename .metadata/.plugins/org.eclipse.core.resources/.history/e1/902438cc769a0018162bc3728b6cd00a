@@ -1,0 +1,23 @@
+package com.in28minutes.spring.basics.componentscan;
+
+import java.util.logging.Logger;
+
+import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CompoentDAO {
+
+	@Autowired
+	ComponentConnection jdbcConnection;
+	Logger logger=LogFactory.getLogger(this.getClass());
+
+	public ComponentConnection getJdbcConnection() {
+		return jdbcConnection;
+	}
+
+	public void setJdbcConnection(ComponentConnection jdbcConnection) {
+		this.jdbcConnection = jdbcConnection;
+	}
+}
